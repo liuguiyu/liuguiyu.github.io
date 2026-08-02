@@ -4,5 +4,5 @@ title = 'Gary Blog'
 theme = 'PaperMod'
 
 [params]
-  defaultTheme = 'auto' # 自动/暗黑模式
-  ShowCodeCopyButtons = true # 显示代码复制按钮
+  defaultTheme = 'auto'
+  ShowCodeCopyButtons = true
