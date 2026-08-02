@@ -1,8 +1,4 @@
 baseURL = 'https://liuguiyu.github.io/'
 locale = 'zh-cn'
-title = 'Gary Blog'
+title = 'My Blog'
 theme = 'PaperMod'
-
-[params]
-  defaultTheme = 'auto'
-  ShowCodeCopyButtons = true
