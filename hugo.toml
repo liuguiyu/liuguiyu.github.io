@@ -1,0 +1,8 @@
+baseURL = 'https://liuguiyu.github.io/'
+languageCode = 'zh-cn'
+title = 'Gary Blog'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'auto' # 自动/暗黑模式
+  ShowCodeCopyButtons = true # 显示代码复制按钮
