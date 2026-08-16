@@ -57,4 +57,33 @@ hugo new content/posts/my-first-post.md
 ```
 
 ##   7. Edit the blog 
+refer to https://www.markdownguide.org/basic-syntax/
 
+## 8. create .gitignore file 
+Make sure the /public folder will never commit to github.
+> /public/
+>
+> /resources/
+>
+> .hugo_build.lock
+>
+> .DS_Store
+
+## 9. Verify using git status & git submodule status
+```powershell
+git status
+git submodule status
+```
+
+## 10. Commit for the first time 
+```powershell
+git commit -m "Initial Hugo blog"
+```
+
+## 11. Connect to remote GitHub repository 
+```powershell
+git remote add origin https://github.com/liuguiyu/liuguiyu.github.io.git
+git remove -v
+```
+
+## 12. 
