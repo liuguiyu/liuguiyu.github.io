@@ -1,7 +1,9 @@
 ---
 title: "Use Hugo and PaperMod to set up Github Blog"
+summary: "In this post, I walk through setting up a blog with Hugo and PaperMod and fixing the deployment problems encountered on GitHub Pages."
 date: 2026-08-16
 draft: false
+tags: ["hugo", "papermod", "github"]
 ---
 
 # Hello Hugo
