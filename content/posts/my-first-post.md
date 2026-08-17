@@ -1,5 +1,5 @@
 ---
-title: "Use Hugo and PaperMod to set up Github Blog"
+title: "Building My Blog with Hugo, PaperMod and GitHub Pages"
 summary: "In this post, I walk through setting up a blog with Hugo and PaperMod and fixing the deployment problems encountered on GitHub Pages."
 date: 2026-08-16
 draft: false
@@ -90,4 +90,10 @@ git remote add origin https://github.com/liuguiyu/liuguiyu.github.io.git
 git remove -v
 ```
 
-## 12. 
+## 12. Git push, triger Github action
+```powershell
+git push
+```
+
+## 13. 404 error
+404 error normally caused by invalid hugo.yml, try use Hugo recommaned configuration. 

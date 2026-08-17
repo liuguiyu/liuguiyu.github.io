@@ -24,9 +24,9 @@ enableRobotsTXT = true
   ShowToc = true
   TocOpen = false
 
-  [params.homeInfoParams]
-    Title = 'Welcome to my blog 👋'
-    Content = 'Cybersecurity · CIAM · Identity · AI · Technology'
+[params.homeInfoParams]
+  Title = 'Security, Identity & Technology'
+  Content = 'Notes, ideas and lessons from cybersecurity, CIAM, identity, AI and technology.'
 
   [[params.socialIcons]]
     name = 'github'
