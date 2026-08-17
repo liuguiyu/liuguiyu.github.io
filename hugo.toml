@@ -3,9 +3,60 @@ languageCode = 'en-us'
 title = '不知情的孩子他还要问'
 theme = 'PaperMod'
 
+enableRobotsTXT = true
+
 [params]
+  env = 'production'
+
+  description = 'A personal blog about cybersecurity, CIAM, identity, AI and technology.'
+  author = 'Gary'
+
   defaultTheme = 'auto'
+  disableThemeToggle = false
+
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
+  ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  ShowWordCount = true
+
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = 'Welcome to my blog 👋'
+    Content = 'Cybersecurity · CIAM · Identity · AI · Technology'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/liuguiyu'
+
+[menu]
+
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Archives'
+    url = '/archives/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 30
+
+  [[menu.main]]
+    identifier = 'search'
+    name = 'Search'
+    url = '/search/'
+    weight = 40
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
