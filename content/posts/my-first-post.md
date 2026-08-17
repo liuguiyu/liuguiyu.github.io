@@ -6,6 +6,7 @@ draft: false
 tags: ["Hugo", "PaperMod", "Github Pages", "Makedown"]
 ShowToc: true
 TocOpen: true
+categories: Technology
 ---
 
 # Hello Hugo
