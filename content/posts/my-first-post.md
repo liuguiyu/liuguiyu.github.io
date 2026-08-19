@@ -13,26 +13,31 @@ categories: Technology
 
 This post records how I set up this blog using Hugo, PaperMod, and GitHub Pages.
 
+## 0. The Technology Stack
+The overall workflow looks like this:
+
+![Hugo GitHub Pages architecture](/images/hugo-blog/tech.png)
+
 ## 1. Make sure Hugo version is greater than 0.158.0
 
 Check the Hugo version:
 
-```text
+```bash
 hugo version
 ```
 
 ## 2. Install PaperMod
-```text
+```bash
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
 ## 3. Make a blog directory
-```text
+```bash
 mkdir d:\blog
 ```
 
 ## 4. In the directory, create Hugo site
-```text
+```bash
 hugo new site liuguiyu.github.io
 ```
 
@@ -51,7 +56,7 @@ theme = 'PaperMod'
 ```
 
 ##   6. Create first blog
-```text
+```bash
 hugo new content/posts/my-first-post.md
 ```
 
@@ -68,24 +73,24 @@ Make sure the /public folder will never commit to github.
 ```
 
 ## 9. Verify using git status & git submodule status
-```text
+```bash
 git status
 git submodule status
 ```
 
 ## 10. Commit for the first time 
-```text
+```bash
 git commit -m "Initial Hugo blog"
 ```
 
 ## 11. Connect to remote GitHub repository 
-```text
+```bash
 git remote add origin https://github.com/liuguiyu/liuguiyu.github.io.git
 git remove -v
 ```
 
 ## 12. Git push, triger Github action
-```text
+```bash
 git push
 ```
 
@@ -94,11 +99,11 @@ The site works corretly on localhost, so 404 error normally caused by invalid hu
 
 ## 14. GitHub Pages Deployment Failed
 The GitHub Actions log showed:
-```text
+```bash
 Creating Pages deployment failed
 ```
 and
-```text
+```bash
 status: 503  
 No server is currently available to service your request.  
 ```
