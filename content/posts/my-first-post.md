@@ -1,5 +1,5 @@
 ---
-title: "Building My Blog with Hugo, PaperMod and GitHub Pages"
+title: "Building My GitHub Blog with Hugo and PaperMod: From 404 to Deployment"
 summary: "In this post, I walk through setting up a blog with Hugo and PaperMod and fixing the deployment problems encountered on GitHub Pages."
 date: 2026-08-16
 draft: false
@@ -33,28 +33,22 @@ mkdir d:\blog
 
 ## 4. In the directory, create Hugo site
 ```powershell
-hugo new project liuguiyu.github.io
+hugo new site liuguiyu.github.io
 ```
 
 ## 5. Edit hugo.toml to be:
-> baseURL = 'https://liuguiyu.github.io/'
->
-> languageCode = 'en-us'
->
-> title = 'My Blog'
->
-> theme = 'PaperMod'
->
-> [params]
->   defaultTheme = 'auto'
->
->   ShowReadingTime = true
->
->   ShowShareButtons = true
->
->   ShowPostNavLinks = true
->
->   ShowCodeCopyButtons = true
+```toml
+baseURL = 'https://liuguiyu.github.io/'
+languageCode = 'en-us'
+title = 'My Blog'
+theme = 'PaperMod'
+[params]
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+```
 
 ##   6. Create first blog
 ```powershell
@@ -66,12 +60,9 @@ refer to https://www.markdownguide.org/basic-syntax/
 
 ## 8. create .gitignore file 
 Make sure the /public folder will never commit to github.
-> /public/
->
-> /resources/
->
-> .hugo_build.lock
->
+> /public/   
+> /resources/   
+> .hugo_build.lock   
 > .DS_Store
 
 ## 9. Verify using git status & git submodule status
@@ -97,4 +88,14 @@ git push
 ```
 
 ## 13. 404 error
-404 error normally caused by invalid hugo.yml, try use Hugo recommaned configuration. 
+The site works corretly on localhost, so 404 error normally caused by invalid hugo.yml, try use Hugo recommaned configuration. 
+
+## 14. GitHub Pages Deployment Failed
+The GitHub Actions log showed:
+> Creating Pages deployment failed
+and
+> status: 503  
+> No server is currently available to service your request.
+The failure happened when GitHub tried to create the Pages deployment. I checked with Copilot, turns out GitHub itself was experiencing an outage.
+refer to: https://devops.com/github-hit-by-widespread-outage-halting-work-for-global-developers/
+![GitHub issue](/images/hugo-blog/unicorn.png)
