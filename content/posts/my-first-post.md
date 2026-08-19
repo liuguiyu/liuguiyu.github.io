@@ -108,6 +108,7 @@ status: 503
 No server is currently available to service your request.  
 ```
 
-The failure happened when GitHub tried to create the Pages deployment. I checked with Copilot, turns out GitHub itself was experiencing an outage.  
+The failure happened when GitHub tried to create the Pages deployment. I checked with Copilot, turns out GitHub itself was experiencing an outage.    
+
 refer to: https://devops.com/github-hit-by-widespread-outage-halting-work-for-global-developers/  
 ![GitHub issue](/images/hugo-blog/unicorn.png)
