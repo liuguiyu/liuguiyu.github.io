@@ -1,20 +1,10 @@
 ---
 title: "Hong Kong SFC Moves Beyond OTP: Why Passkeys Are Becoming the New Standard for Internet Trading"
-date: 2026-08-20
+date: 2026-08-19
 draft: false
 description: "What the Hong Kong SFC's new cybersecurity requirements mean for OTP, phishing-resistant authentication and passkeys."
-
-categories:
-  - Identity
-
-tags:
-  - SFC
-  - Passkey
-  - FIDO2
-  - OTP
-  - Authentication
-  - Cybersecurity
-
+categories: Identity
+tags: ["Passkey", "OTP", "SFC", "FIDO2"]
 ShowToc: true
 TocOpen: true
 ShowReadingTime: true
