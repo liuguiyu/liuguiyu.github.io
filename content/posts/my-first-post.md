@@ -17,22 +17,22 @@ This post records how I set up this blog using Hugo, PaperMod, and GitHub Pages.
 
 Check the Hugo version:
 
-```powershell
+```text
 hugo version
 ```
 
 ## 2. Install PaperMod
-```powershell
+```text
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
 ## 3. Make a blog directory
-```powershell
+```text
 mkdir d:\blog
 ```
 
 ## 4. In the directory, create Hugo site
-```powershell
+```text
 hugo new site liuguiyu.github.io
 ```
 
@@ -51,7 +51,7 @@ theme = 'PaperMod'
 ```
 
 ##   6. Create first blog
-```powershell
+```text
 hugo new content/posts/my-first-post.md
 ```
 
@@ -60,30 +60,32 @@ refer to https://www.markdownguide.org/basic-syntax/
 
 ## 8. create .gitignore file 
 Make sure the /public folder will never commit to github.
-> /public/   
-> /resources/   
-> .hugo_build.lock   
-> .DS_Store
+```gitignore
+/public/   
+/resources/   
+.hugo_build.lock   
+.DS_Store
+```
 
 ## 9. Verify using git status & git submodule status
-```powershell
+```text
 git status
 git submodule status
 ```
 
 ## 10. Commit for the first time 
-```powershell
+```text
 git commit -m "Initial Hugo blog"
 ```
 
 ## 11. Connect to remote GitHub repository 
-```powershell
+```text
 git remote add origin https://github.com/liuguiyu/liuguiyu.github.io.git
 git remove -v
 ```
 
 ## 12. Git push, triger Github action
-```powershell
+```text
 git push
 ```
 
@@ -92,10 +94,15 @@ The site works corretly on localhost, so 404 error normally caused by invalid hu
 
 ## 14. GitHub Pages Deployment Failed
 The GitHub Actions log showed:
-> Creating Pages deployment failed
+```text
+Creating Pages deployment failed
+```
 and
-> status: 503  
-> No server is currently available to service your request.
-The failure happened when GitHub tried to create the Pages deployment. I checked with Copilot, turns out GitHub itself was experiencing an outage.
-refer to: https://devops.com/github-hit-by-widespread-outage-halting-work-for-global-developers/
+```text
+status: 503  
+No server is currently available to service your request.  
+```
+
+The failure happened when GitHub tried to create the Pages deployment. I checked with Copilot, turns out GitHub itself was experiencing an outage.  
+refer to: https://devops.com/github-hit-by-widespread-outage-halting-work-for-global-developers/  
 ![GitHub issue](/images/hugo-blog/unicorn.png)
