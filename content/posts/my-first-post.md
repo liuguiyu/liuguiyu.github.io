@@ -112,3 +112,11 @@ The failure happened when GitHub tried to create the Pages deployment. I checked
 
 refer to: https://devops.com/github-hit-by-widespread-outage-halting-work-for-global-developers/  
 ![GitHub issue](/images/hugo-blog/unicorn.png)
+
+## 15. Add comments and analysis 
+create \layouts\partials\comments.html and \layouts\partials\extend_footer.html  
+for comments, we can use https://giscus.app/zh-CN  
+for analysis, we can use https://busuanzi.ibruce.info/  
+
+## 16. Add SEO
+Go to https://search.google.com/search-console/welcome, add your website, google will generate a html for verification, you will need put the html into \static folder.  
