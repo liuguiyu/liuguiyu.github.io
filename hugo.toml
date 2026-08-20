@@ -13,9 +13,10 @@ enableRobotsTXT = true
   comments = true
   defaultTheme = 'auto'
   disableThemeToggle = false
-
+  keywords = ["Security", "Hugo", "PaperMod", "CIAM", "AI"]
   ShowReadingTime = true
   ShowShareButtons = true
+  ShowFullTextinRFC = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
@@ -73,3 +74,7 @@ enableRobotsTXT = true
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
 
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
