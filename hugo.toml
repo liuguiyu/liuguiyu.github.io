@@ -10,7 +10,7 @@ enableRobotsTXT = true
 
   description = 'A personal blog about cybersecurity, CIAM, identity, AI and technology.'
   author = 'Gary'
-
+  comments = true
   defaultTheme = 'auto'
   disableThemeToggle = false
 
@@ -72,3 +72,4 @@ enableRobotsTXT = true
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
+
